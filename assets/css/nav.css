@@ -1,3 +1,29 @@
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:aliceblue;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:aliceblue;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:aliceblue;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:aliceblue;
+}
+.search-button{        
+            -webkit-animation:run 5s linear 2s infinite;
+        }     
+        .search-button:hover{     
+            -webkit-animation-play-state:paused;     
+        }    
+        @keyframes run{     
+            from{     
+                -webkit-transform:rotate(360deg);     
+            }     
+            to{     
+                -webkit-transform:rotate(0deg);     
+            }     
+        }
 .box2 {
     height: 86px;
     cursor: pointer;

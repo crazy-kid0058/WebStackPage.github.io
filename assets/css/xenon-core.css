@@ -918,7 +918,7 @@ body {
     display: table-cell;
     position: relative;
     width: 280px;
-    background: #2c2e2f;
+    background:	#009C87;
     z-index: 1
 }
 
@@ -971,7 +971,7 @@ body {
 }
 
 .sidebar-menu .main-menu a {
-    color: #979898;
+    color: #D4F2E7;
     text-decoration: none;
     display: block;
     padding: 13px 5px;
@@ -2273,7 +2273,7 @@ body.chat-open .user-info-navbar a[data-toggle=chat] {
 }
 
 .user-info-navbar {
-    background-color: #fff;
+    background-color: #009C87;
     min-height: 0;
     border: 0;
     padding: 0;
@@ -2309,7 +2309,7 @@ body.chat-open .user-info-navbar a[data-toggle=chat] {
     position: relative;
     margin: 0;
     padding: 0;
-    border: 1px solid #fff;
+    border: 0px 
     border-top: 0;
     border-bottom: 0;
     display: block;
