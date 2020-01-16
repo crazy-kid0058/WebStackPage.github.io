@@ -924,7 +924,7 @@ body {
 
 .sidebar-menu .logo-env {
     padding: 19px 45px;
-    border-bottom: 1px solid #313437
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .sidebar-menu .logo-env .logo {
@@ -971,11 +971,11 @@ body {
 }
 
 .sidebar-menu .main-menu a {
-    color: #D4F2E7;
+    color: #FFFFFF;
     text-decoration: none;
     display: block;
     padding: 13px 5px;
-    border-bottom: 1px solid #313437
+    border-bottom: 1px solid #8CC8AA;
 }
 
 .sidebar-menu .main-menu a>i {

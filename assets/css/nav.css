@@ -13,6 +13,10 @@
 .form-action{
 	width: 32%;
 	text-align: center;
+	float: left!important;
+}
+.form-action>a{
+	margin-right: 0!important;
 }
 .search-button{        
             -webkit-animation:run 5s linear 2s infinite;
