@@ -254,13 +254,13 @@
                     </li>
               </ul>
             </nav>
-			<div class="row col-sm-offset-2 col-sm-8" style="height: 30px">
-				<button class="form-action"></button>
-				<button class="form-action"></button>
-				<button class="form-action"></button>
-			</div>
-		  <div class="row" style="margin-bottom: 10px;">
-				<form action="http://www.baidu.com/s" class="col-sm-8 col-sm-offset-2 col-xs-12 search" method="GET" target="_blank" style="border-radius: 40px; opacity: 0.7;background-color:#009C87;height: 40px; padding-left: 20px;padding-right: 0;">
+	<ul id="myTab" class="nav nav-tabs col-sm-8 col-sm-offset-2">
+		<li class="active form-action"><a href="https://www.baidu.com/s" name="wd">Baidu</a></li>
+		<li class="form-action"><a href="https://www.google.com/search" name="q">Google</a></li>
+		<li class="form-action"><a href="https://cn.bing.com/search" name="q">Bing</a></li>
+	</ul>
+	<div class="row" style="margin-bottom: 10px;">
+		  <form action="http://www.baidu.com/s" class="col-sm-8 col-sm-offset-2 col-xs-12 search" method="GET" target="_blank" style="border-radius: 40px; opacity: 0.7;background-color:#009C87;height: 40px; padding-left: 20px;padding-right: 0;">
         			<input type="text" name="wd"  class="search-input" placeholder="输入并搜索…"  autocomplete="off" style="height: 100%;color: #FFFFFF; font-size: 120%; outline: 0; border: 0;background-color: transparent;float: left;"/>
 					<button type="submit" style="height: 100%;width: 40px; float: right;border-radius: 100%; opacity: 0.4;border: none;outline: none;"><i class="fa-search search-button"></i></button>
    			  </form>
@@ -4033,7 +4033,13 @@
                     }
                 })
             }
-        })
+        })	
+		$(".form-action").click(function (e) {
+  			e.preventDefault();
+			$(".search").attr("action",$(this).children("a").attr("href"));
+			$(".search-input").attr("name",$(this).children("a").attr("name"));
+  			$(this).tab('show');
+		})
 		$(".search").mouseenter(function(){
 			$(this).animate({opacity:"1"});
 		})

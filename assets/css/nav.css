@@ -10,6 +10,10 @@
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:aliceblue;
 }
+.form-action{
+	width: 32%;
+	text-align: center;
+}
 .search-button{        
             -webkit-animation:run 5s linear 2s infinite;
         }     
